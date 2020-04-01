@@ -103,6 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-.json-org
+app.json-org
 env.json
 
