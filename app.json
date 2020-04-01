@@ -1,11 +1,13 @@
 {
-  "id": "com.tado",
+  "id": "com.tado.withgeo",
   "sdk": 2,
   "name": {
-    "en": "tado°"
+    "en": "Tado° with Geo"
+    "nl": "Tado° met Geo"
   },
   "description": {
-    "en": "Adds support for tado°"
+    "en": "Unofficial Tado app with Geo support"
+    "nl": "Officeuse Tado app met Geo ondersteuning"
   },
   "tags": {
     "en": [
@@ -29,10 +31,11 @@
     ]
   },
   "category": "climate",
-  "version": "3.0.3",
-  "compatibility": ">=1.5.0",
+  "version": "1.0.0",
+  "compatibility": ">=3.0.0",
   "author": {
-    "name": "Athom B.V."
+    "name": "Marco Pietersma"
+    "email": "info@mp-ictdiensten.eu"
   },
   "contributors": {
     "developers": [
@@ -40,6 +43,11 @@
         "name": "Alex van den Berg",
         "website": "https://github.com/OpenMindNL",
         "email": "openmind_nl@hotmail.com"
+      }
+      {
+        "name": "Marco Pietersma",
+        "website": "https://github.com/MP-ICT-Diensten",
+        "email": "info@mp-ictdiensten.eu"
       }
     ]
   },
