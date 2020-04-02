@@ -105,8 +105,6 @@ class TadoDeviceThermostat extends TadoDevice {
 				});
 
 	}
-	
-	
 
 	triggerFlowTargetOnOff( device, tokens ) {
 		this._flowTriggerTargetOnOff.trigger( device, tokens ).catch( this.error )
@@ -148,8 +146,8 @@ class TadoDeviceThermostat extends TadoDevice {
 		this._flowTriggerPresence.trigger( device, tokens ).catch( this.error )
 	}
 
-	triggerFlowBatteryChange( device, tokens ) {
-		this._flowTriggerBatteryChange.trigger( device, tokens ).catch( this.error )
+	triggerFlowBatteryChange( device, tokens) {
+		this._flowTriggerBatteryChange.trigger( device, tokens ).catch( this.error );
 	}
 
 	triggerFlowMobileGeoTrackingEnabled( device, tokens, state ) {
@@ -235,7 +233,6 @@ class TadoDeviceThermostat extends TadoDevice {
 				this.setCapabilityValue('smart_heating', value ).catch( this.error );
 			}
 		}
-
 
 		if( this.hasCapability('airco_mode') ){
 			var value = state.setting.power
@@ -734,7 +731,6 @@ class TadoDeviceThermostat extends TadoDevice {
 		return true;
 	}
 
-
 	async onFlowActionSetSmart() {
 		return this.oAuth2Client.unsetOverlay( this._homeId, this._zoneId);
 	}
@@ -934,7 +930,6 @@ class TadoDeviceThermostat extends TadoDevice {
 			"termination": { "type": "TADO_MODE" }
 		});
 	}
-
 
 	async _onCapabilityTargetTemperature( value ) {
 		switch(this._type){
