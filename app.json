@@ -36,7 +36,7 @@
   "compatibility": ">=1.5.0",
   "author": {
     "name": "Marco Pietersma",
-    "email": "info@mp-ictdiensten.eu"
+    "email": "info@mp-ictdiensten.eu",
     "website": "https://github.com/MP-ICT-Diensten/com.tado.withgeo/"
   },
   "bugs": {
