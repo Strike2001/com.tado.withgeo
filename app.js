@@ -14,6 +14,8 @@ const SCOPES = [
 	'home.mobile.devices.location:read'
 ];
 
+process.env.DEBUG === '1';
+
 class TadoApp extends OAuth2App {
 
 	onOAuth2Init() {
